@@ -1,47 +1,32 @@
 %YAML 1.1
 ---
 proxies:
-- &id062 {name: ℹ️ www.mgjs.site最新域名，更新订阅 - MG Network, server: 3.mamamajd.site, port: 50003, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id063 {name: '🇮🇳 [vip①]印度1 - MG Network', server: 11.mamamajd.site, port: 23611, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id064 {name: '🇩🇪 [vip①]德国1 - MG Network', server: 16.mamamajd.site, port: 23616, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id065 {name: '🇩🇪 [vip①]德国2 - MG Network', server: 18.mamamajd.site, port: 23618, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id066 {name: '🇬🇧 [vip①]英国1 - MG Network', server: 5.mamamajd.site, port: 23605, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id067 {name: '🇬🇧 [vip①]英国2 - MG Network', server: 13.mamamajd.site, port: 23613, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id068 {name: '🇰🇷 [vip①]韩国1 - MG Network', server: 14.mamamajd.site, port: 23614, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id001 {name: ℹ️ 续费：xyjs.app - 迅云加速, server: 01.xunyunnode.sbs, port: 38763, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id002 {name: ℹ️ 问题反馈邮箱：jianyi5978@gmail.com - 迅云加速, server: jp1.xunyunnode.sbs, port: 3389, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id003 {name: 超级高佣招合作代理 - 迅云加速, server: 01.xunyunnode.sbs, port: 38763, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id004 {name: 🇬🇧 英国01 - 迅云加速, server: 01.xunyunnode.sbs, port: 17587, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id005 {name: 🇬🇧 英国02 - 迅云加速, server: 02.xunyunnode.sbs, port: 59406, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id006 {name: 🇬🇧 英国03 - 迅云加速, server: xc.xunyunnode.sbs, port: 43421, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id007 {name: 🇬🇧 英国04 - 迅云加速, server: wa.xunyunnode.sbs, port: 25174, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id008 {name: 🇨🇦 加拿大01 - 迅云加速, server: 01.xunyunnode.sbs, port: 44306, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id009 {name: 🇨🇦 加拿大02 - 迅云加速, server: 02.xunyunnode.sbs, port: 57990, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id010 {name: 🇨🇦 加拿大03 - 迅云加速, server: xc.xunyunnode.sbs, port: 19707, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id011 {name: 🇨🇦 加拿大04 - 迅云加速, server: wa.xunyunnode.sbs, port: 50737, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id012 {name: 🇻🇳 越南01 - 迅云加速, server: 01.xunyunnode.sbs, port: 10326, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id013 {name: 🇻🇳 越南02 - 迅云加速, server: 02.xunyunnode.sbs, port: 38227, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id014 {name: 🇻🇳 越南03 - 迅云加速, server: xc.xunyunnode.sbs, port: 42767, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id015 {name: 🇻🇳 越南04 - 迅云加速, server: wa.xunyunnode.sbs, port: 43680, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
-- &id016 {name: ℹ️ 续费地址官网：yes369.com - 火箭云, server: n001.xunxunmimisbs.sbs, port: 21100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id017 {name: ℹ️ 问题反馈邮箱：jianyi5978@gmail.com - 火箭云, server: n001.xunxunmimisbs.sbs, port: 21100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id018 {name: 超级高佣招合作代理 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 21100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id019 {name: 🇰🇷 韩国01丨Tiktok - 火箭云, server: n001.xunxunmimisbs.sbs, port: 43100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id020 {name: 🇰🇷 韩国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 43100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id021 {name: 🇬🇧 英国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 44100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id022 {name: 🇬🇧 英国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 44100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id023 {name: 🇩🇪 德国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 46100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id024 {name: 🇩🇪 德国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 46100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id025 {name: 🇮🇳 印度01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 47100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id026 {name: 🇮🇳 印度02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 47100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id027 {name: 🇫🇷 法国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 48100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id028 {name: 🇫🇷 法国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 48100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id029 {name: 🇦🇪 迪拜01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 49100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id030 {name: 🇦🇪 迪拜02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49100, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id031 {name: 🇻🇳 越南01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 49110, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id032 {name: 🇻🇳 越南02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49110, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id033 {name: 🇹🇭 泰国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 49120, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- &id034 {name: 🇹🇭 泰国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49120, type: trojan, password: f95998db-e0a0-410b-adc2-dc3ec22aa78f, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id001 {name: ℹ️ 续费地址官网：yes369.com - 火箭云, server: n001.xunxunmimisbs.sbs, port: 21100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id002 {name: ℹ️ 问题反馈邮箱：jianyi5978@gmail.com - 火箭云, server: n001.xunxunmimisbs.sbs, port: 21100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id003 {name: 超级高佣招合作代理 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 21100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id004 {name: 🇰🇷 韩国01丨Tiktok - 火箭云, server: n001.xunxunmimisbs.sbs, port: 43100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id005 {name: 🇰🇷 韩国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 43100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id006 {name: 🇬🇧 英国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 44100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id007 {name: 🇬🇧 英国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 44100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id008 {name: 🇩🇪 德国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 46100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id009 {name: 🇩🇪 德国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 46100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id010 {name: 🇮🇳 印度01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 47100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id011 {name: 🇮🇳 印度02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 47100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id012 {name: 🇫🇷 法国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 48100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id013 {name: 🇫🇷 法国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 48100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id014 {name: 🇦🇪 迪拜01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 49100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id015 {name: 🇦🇪 迪拜02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49100, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id016 {name: 🇻🇳 越南01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 49110, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id017 {name: 🇻🇳 越南02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49110, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id018 {name: 🇹🇭 泰国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 49120, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id019 {name: 🇹🇭 泰国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49120, type: trojan, password: 909e9210-5aaf-4383-afaa-e217b66fe237, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- &id047 {name: ℹ️ www.mgjs.site最新域名，更新订阅 - MG Network, server: 3.mamamajd.site, port: 50003, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id048 {name: '🇮🇳 [vip①]印度1 - MG Network', server: 11.mamamajd.site, port: 23611, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id049 {name: '🇩🇪 [vip①]德国1 - MG Network', server: 16.mamamajd.site, port: 23616, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id050 {name: '🇩🇪 [vip①]德国2 - MG Network', server: 18.mamamajd.site, port: 23618, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id051 {name: '🇬🇧 [vip①]英国1 - MG Network', server: 5.mamamajd.site, port: 23605, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id052 {name: '🇬🇧 [vip①]英国2 - MG Network', server: 13.mamamajd.site, port: 23613, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id053 {name: '🇰🇷 [vip①]韩国1 - MG Network', server: 14.mamamajd.site, port: 23614, type: vmess, uuid: 3808ac3e-4917-3e2c-a983-e9c09e1fcc13, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - *id001
 - *id002
 - *id003
@@ -57,56 +42,107 @@ proxies:
 - *id013
 - *id014
 - *id015
-- {name: '🇮🇳 [电信专线] 印度 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 59069, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇮🇳 [联通专线] 印度 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 50369, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇮🇳 [移动专线] 印度 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 54274, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇧🇷 [电信专线] 巴西 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 59469, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇧🇷 [联通专线] 巴西 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 57609, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇧🇷 [移动专线] 巴西 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 53131, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇻🇳 [电信专线] 越南 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 52384, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇻🇳 [联通专线] 越南 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 55774, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇻🇳 [移动专线] 越南 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 58537, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇩🇪 [电信专线] 德国 xA区 - 南北云', server: zf-ct.bgblwow.org, port: 54881, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇩🇪 [联通专线] 德国 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 51577, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇩🇪 [移动专线] 德国 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 58056, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇰🇷 [电信专线] 韩国 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 57459, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇰🇷 [联通专线] 韩国 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 55064, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇰🇷 [移动专线] 韩国 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 55782, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇫🇷 [电信专线] 法国 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 59720, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇫🇷 [联通专线] 法国 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 50748, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- {name: '🇫🇷 [移动专线] 法国 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 59741, type: ss, cipher: chacha20-ietf-poly1305, password: 9558804f-e18d-43a9-9a87-1e672e8ac573, udp: true}
-- &id036 {name: ℹ️ 官网 slvp.nxxbbf.com - ⚡闪连机场, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id037 {name: ℹ️ 无法连接到官网重新导入订阅 - ⚡闪连机场, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id038 {name: 🇰🇷 韩国 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id039 {name: 🇰🇷 韩国 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id040 {name: 🇰🇷 韩国 (广港)3x1 - ⚡闪连机场, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id041 {name: 🇹🇷 土耳其 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id042 {name: 🇹🇷 土耳其 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id043 {name: 🇹🇷 土耳其 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id044 {name: 🇮🇸 冰岛 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id045 {name: 🇮🇸 冰岛 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id046 {name: 🇮🇸 冰岛 (广港)3x1 - ⚡闪连机场, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id047 {name: 🇮🇳 印度 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id048 {name: 🇮🇳 印度 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id049 {name: 🇮🇳 印度 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id050 {name: 🇧🇷 巴西 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id051 {name: 🇧🇷 巴西 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id052 {name: 🇧🇷 巴西 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id053 {name: 🇮🇱 以色列 (广港)1x1 - ⚡闪连机场, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id054 {name: 🇮🇱 以色列 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id055 {name: 🇮🇱 以色列 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id056 {name: 🇲🇽 墨西哥 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id057 {name: 🇲🇽 墨西哥 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id058 {name: 🇲🇽 墨西哥 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id059 {name: 🇹🇭 泰国 (广新)1  x1 - ⚡闪连机场, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id060 {name: 🇹🇭 泰国 (广新) 2  x1 - ⚡闪连机场, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id061 {name: 🇹🇭 泰国 (广新)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
-- &id035 {name: ℹ️ 非节点❌网站sdm5g.com，请每周更新订阅！ - 闪电猫, server: dog.lightningcat.pro, port: 10086, type: vmess, uuid: ebecb3b7-3976-39f4-b35b-312b400aca72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- *id016
+- *id017
+- *id018
+- *id019
+- {name: ℹ️ 续费：xyjs.app - 迅云加速, server: 01.xunyunnode.sbs, port: 38763, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: ℹ️ 问题反馈邮箱：jianyi5978@gmail.com - 迅云加速, server: jp1.xunyunnode.sbs, port: 3389, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 超级高佣招合作代理 - 迅云加速, server: 01.xunyunnode.sbs, port: 38763, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇬🇧 英国01 - 迅云加速, server: 01.xunyunnode.sbs, port: 17587, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇬🇧 英国02 - 迅云加速, server: 02.xunyunnode.sbs, port: 59406, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇬🇧 英国03 - 迅云加速, server: xc.xunyunnode.sbs, port: 43421, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇬🇧 英国04 - 迅云加速, server: wa.xunyunnode.sbs, port: 25174, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇨🇦 加拿大01 - 迅云加速, server: 01.xunyunnode.sbs, port: 44306, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇨🇦 加拿大02 - 迅云加速, server: 02.xunyunnode.sbs, port: 57990, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇨🇦 加拿大03 - 迅云加速, server: xc.xunyunnode.sbs, port: 19707, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇨🇦 加拿大04 - 迅云加速, server: wa.xunyunnode.sbs, port: 50737, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇻🇳 越南01 - 迅云加速, server: 01.xunyunnode.sbs, port: 10326, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇻🇳 越南02 - 迅云加速, server: 02.xunyunnode.sbs, port: 38227, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇻🇳 越南03 - 迅云加速, server: xc.xunyunnode.sbs, port: 42767, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: 🇻🇳 越南04 - 迅云加速, server: wa.xunyunnode.sbs, port: 43680, type: ss, cipher: chacha20-ietf-poly1305, password: 0acebd72-cf7a-4a82-819a-5bbf88187c8c, udp: true}
+- {name: '🇮🇳 [电信专线] 印度 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 59069, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇮🇳 [联通专线] 印度 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 50369, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇮🇳 [移动专线] 印度 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 54274, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇧🇷 [电信专线] 巴西 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 59469, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇧🇷 [联通专线] 巴西 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 57609, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇧🇷 [移动专线] 巴西 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 53131, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇻🇳 [电信专线] 越南 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 52384, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇻🇳 [联通专线] 越南 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 55774, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇻🇳 [移动专线] 越南 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 58537, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇩🇪 [电信专线] 德国 xA区 - 南北云', server: zf-ct.bgblwow.org, port: 54881, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇩🇪 [联通专线] 德国 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 51577, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇩🇪 [移动专线] 德国 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 58056, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇰🇷 [电信专线] 韩国 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 57459, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇰🇷 [联通专线] 韩国 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 55064, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇰🇷 [移动专线] 韩国 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 55782, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇫🇷 [电信专线] 法国 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 59720, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇫🇷 [联通专线] 法国 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 50748, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- {name: '🇫🇷 [移动专线] 法国 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 59741, type: ss, cipher: chacha20-ietf-poly1305, password: c432e53b-dcb2-4669-9dc1-39bb3b5bc661, udp: true}
+- &id021 {name: ℹ️ 官网 slvp.nxxbbf.com - ⚡闪连机场, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id022 {name: ℹ️ 无法连接到官网重新导入订阅 - ⚡闪连机场, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id023 {name: 🇰🇷 韩国 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id024 {name: 🇰🇷 韩国 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id025 {name: 🇰🇷 韩国 (广港)3x1 - ⚡闪连机场, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id026 {name: 🇹🇷 土耳其 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id027 {name: 🇹🇷 土耳其 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id028 {name: 🇹🇷 土耳其 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id029 {name: 🇮🇸 冰岛 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id030 {name: 🇮🇸 冰岛 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id031 {name: 🇮🇸 冰岛 (广港)3x1 - ⚡闪连机场, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id032 {name: 🇮🇳 印度 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id033 {name: 🇮🇳 印度 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id034 {name: 🇮🇳 印度 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id035 {name: 🇧🇷 巴西 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id036 {name: 🇧🇷 巴西 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id037 {name: 🇧🇷 巴西 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id038 {name: 🇮🇱 以色列 (广港)1x1 - ⚡闪连机场, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id039 {name: 🇮🇱 以色列 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id040 {name: 🇮🇱 以色列 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id041 {name: 🇲🇽 墨西哥 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id042 {name: 🇲🇽 墨西哥 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id043 {name: 🇲🇽 墨西哥 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id044 {name: 🇹🇭 泰国 (广新)1  x1 - ⚡闪连机场, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id045 {name: 🇹🇭 泰国 (广新) 2  x1 - ⚡闪连机场, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id046 {name: 🇹🇭 泰国 (广新)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 4cf21b54-edad-420c-b302-3f7050e69b1c, udp: true}
+- &id020 {name: ℹ️ 非节点❌网站sdm5g.com，请每周更新订阅！ - 闪电猫, server: dog.lightningcat.pro, port: 10086, type: vmess, uuid: 8b9aada7-5463-3b35-9e4c-f3d97979660e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- *id001
+- *id002
+- *id003
+- *id004
+- *id005
+- *id006
+- *id007
+- *id008
+- *id009
+- *id010
+- *id011
+- *id012
+- *id013
+- *id014
+- *id015
 - *id016
 - *id017
 - *id018
 - *id019
 - *id020
+- {name: 🇨🇦 加拿大①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18851, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇮🇳 印度①孟买一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18808, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇮🇩 印度尼西亚--雅加达①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18834, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇧🇷 巴西①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18826, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇩🇪 德国①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18816, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇩🇪 德国②一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18831, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇮🇹 意大利①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18840, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇫🇷 法国①巴黎一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18819, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇦🇺 澳大利亚①悉尼一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18811, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇸🇪 瑞典①斯德哥尔摩一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18809, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇬🇧 英国①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18815, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇳🇱 荷兰①阿姆斯特丹一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18822, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yresdc3fjfg.raspn.cn}}, udp: true}
+- {name: 🇪🇸 西班牙①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18852, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- {name: 🇦🇷 阿根廷一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18853, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
+- *id020
+- {name: ℹ️ 永久地址：bit.ly/1pink2 - VeryPinkNxpple, server: 2025.linenet.xyz, port: 443, type: trojan, password: 2a286f04-c254-39fa-8fce-4f377f2f83f3, sni: 2025.linenet.xyz, skip-cert-verify: true, udp: true}
+- {name: ℹ️ 使用不了请重新导入订阅 - VeryPinkNxpple, server: 2025.linenet.xyz, port: 443, type: trojan, password: 2a286f04-c254-39fa-8fce-4f377f2f83f3, sni: 2025.linenet.xyz, skip-cert-verify: true, udp: true}
 - *id021
 - *id022
 - *id023
@@ -122,23 +158,6 @@ proxies:
 - *id033
 - *id034
 - *id035
-- {name: 🇨🇦 加拿大①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18851, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇮🇳 印度①孟买一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18808, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇮🇩 印度尼西亚--雅加达①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18834, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇧🇷 巴西①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18826, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇩🇪 德国①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18816, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇩🇪 德国②一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18831, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇮🇹 意大利①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18840, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇫🇷 法国①巴黎一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18819, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇦🇺 澳大利亚①悉尼一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18811, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇸🇪 瑞典①斯德哥尔摩一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18809, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇬🇧 英国①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18815, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇳🇱 荷兰①阿姆斯特丹一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18822, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yresdc3fjfg.raspn.cn}}, udp: true}
-- {name: 🇪🇸 西班牙①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18852, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- {name: 🇦🇷 阿根廷一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18853, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
-- *id035
-- {name: ℹ️ 永久地址：bit.ly/1pink2 - VeryPinkNxpple, server: 2025.linenet.xyz, port: 443, type: trojan, password: a860c14a-6109-33f9-bf1b-da0eaf98396b, sni: 2025.linenet.xyz, skip-cert-verify: true, udp: true}
-- {name: ℹ️ 使用不了请重新导入订阅 - VeryPinkNxpple, server: 2025.linenet.xyz, port: 443, type: trojan, password: a860c14a-6109-33f9-bf1b-da0eaf98396b, sni: 2025.linenet.xyz, skip-cert-verify: true, udp: true}
 - *id036
 - *id037
 - *id038
@@ -150,41 +169,26 @@ proxies:
 - *id044
 - *id045
 - *id046
-- *id047
-- *id048
-- *id049
-- *id050
-- *id051
-- *id052
-- *id053
-- *id054
-- *id055
-- *id056
-- *id057
-- *id058
-- *id059
-- *id060
-- *id061
-- {name: ℹ️ 续费地址官网：vam666.com - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: ℹ️ 备用：vam166.com - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: ℹ️ 问题反馈邮箱：jianyi5978@gmail.com - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 超级高佣招合作代理 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇰🇷 韩国01丨Tiktok - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 22100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇰🇷 韩国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 22100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇬🇧 英国01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 23100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇬🇧 英国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 23100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇩🇪 德国01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 25100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇩🇪 德国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 25100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇫🇷 法国01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 26100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇫🇷 法国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 26100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇮🇳 印度01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 27100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇮🇳 印度02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 27100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇦🇪 迪拜01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 28100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇦🇪 迪拜02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 28100, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇻🇳 越南01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 28200, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇻🇳 越南02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 28200, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇹🇭 泰国01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 28300, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇹🇭 泰国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 28300, type: trojan, password: c3cda1a0-82dc-4d58-be57-e7e28bb4c9fe, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: ℹ️ 续费地址官网：vam666.com - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: ℹ️ 备用：vam166.com - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: ℹ️ 问题反馈邮箱：jianyi5978@gmail.com - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 超级高佣招合作代理 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇰🇷 韩国01丨Tiktok - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 22100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇰🇷 韩国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 22100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇬🇧 英国01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 23100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇬🇧 英国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 23100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇩🇪 德国01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 25100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇩🇪 德国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 25100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇫🇷 法国01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 26100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇫🇷 法国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 26100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: fr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇮🇳 印度01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 27100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇮🇳 印度02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 27100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: in01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇦🇪 迪拜01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 28100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇦🇪 迪拜02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 28100, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇻🇳 越南01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 28200, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇻🇳 越南02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 28200, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇹🇭 泰国01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 28300, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇹🇭 泰国02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 28300, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇳🇱 荷兰-v6|01*0.5倍率 - 悦云, server: naran1.616626.xyz, port: 22305, type: vmess, uuid: 8bc126dc-2f3d-42c0-85cf-12428857c712, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: 🇳🇱 荷兰-v6|02*0.5倍率 - 悦云, server: naran2.616626.xyz, port: 22306, type: vmess, uuid: 8bc126dc-2f3d-42c0-85cf-12428857c712, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: 🇳🇱 荷兰-v6|03*0.5倍率 - 悦云, server: naran3.616626.xyz, port: 22308, type: vmess, uuid: 8bc126dc-2f3d-42c0-85cf-12428857c712, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -194,10 +198,10 @@ proxies:
 - {name: 🇩🇪 德国-v6|03*0.5倍率 - 悦云, server: netcp3.616626.xyz, port: 22307, type: vmess, uuid: 8bc126dc-2f3d-42c0-85cf-12428857c712, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: 🇳🇱 【荷兰05】*0.5倍率 - 悦云, server: nara.189.ovh, port: 10027, type: trojan, password: 8bc126dc-2f3d-42c0-85cf-12428857c712, sni: nara.189.ovh, skip-cert-verify: true, udp: true}
 - {name: 🇩🇪 【德国06】*0.5倍率 - 悦云, server: netcp4.616626.xyz, port: 10027, type: trojan, password: 8bc126dc-2f3d-42c0-85cf-12428857c712, sni: netcp4.616626.xyz, skip-cert-verify: true, udp: true}
-- *id062
-- *id063
-- *id064
-- *id065
-- *id066
-- *id067
-- *id068
+- *id047
+- *id048
+- *id049
+- *id050
+- *id051
+- *id052
+- *id053
