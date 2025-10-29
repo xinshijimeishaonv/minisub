@@ -1,9 +1,9 @@
 %YAML 1.1
 ---
 proxies:
-- {name: '🇭🇰 [电信专线] 香港 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 58911, type: ss, cipher: chacha20-ietf-poly1305, password: 928bef52-f775-4e7d-ac7c-7a38c1ef1418, udp: true}
-- {name: '🇭🇰 [联通专线] 香港 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 53754, type: ss, cipher: chacha20-ietf-poly1305, password: 928bef52-f775-4e7d-ac7c-7a38c1ef1418, udp: true}
-- {name: '🇭🇰 [移动专线] 香港 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 59543, type: ss, cipher: chacha20-ietf-poly1305, password: 928bef52-f775-4e7d-ac7c-7a38c1ef1418, udp: true}
+- {name: '🇭🇰 [电信专线] 香港 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 58911, type: ss, cipher: chacha20-ietf-poly1305, password: 170be4aa-14e4-44e0-a7ee-f42c6f73b7d0, udp: true}
+- {name: '🇭🇰 [联通专线] 香港 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 53754, type: ss, cipher: chacha20-ietf-poly1305, password: 170be4aa-14e4-44e0-a7ee-f42c6f73b7d0, udp: true}
+- {name: '🇭🇰 [移动专线] 香港 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 59543, type: ss, cipher: chacha20-ietf-poly1305, password: 170be4aa-14e4-44e0-a7ee-f42c6f73b7d0, udp: true}
 - {name: 🇭🇰 香港②一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18820, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
 - {name: 🇭🇰 香港③一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18838, type: vmess, uuid: 0e9b9531-05e9-30fe-88a8-4712c7d67648, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
 - {name: 🇭🇰 香港01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 21200, type: trojan, password: 41964ca6-fb66-4c98-a893-5a6aa83a6855, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
