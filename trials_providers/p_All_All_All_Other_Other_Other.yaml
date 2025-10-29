@@ -20,3 +20,4 @@ proxies:
 - {name: 🇻🇳 越南02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49110, type: trojan, password: b3f4926c-0dc7-4d12-b2d7-08f072e77dd8, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇹🇭 泰国01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 49120, type: trojan, password: b3f4926c-0dc7-4d12-b2d7-08f072e77dd8, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇹🇭 泰国02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49120, type: trojan, password: b3f4926c-0dc7-4d12-b2d7-08f072e77dd8, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: ℹ️ 非节点❌网站sdm5g.com，请每周更新订阅！ - 闪电猫, server: dog.lightningcat.pro, port: 10086, type: vmess, uuid: daac13d6-5ba6-3b29-979a-1dce899a1b83, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}

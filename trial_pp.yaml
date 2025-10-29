@@ -59,11 +59,11 @@ proxy-groups:
   - p_All_All_TW_TW_CN_CN
   - p_All_All_US_US
   - p_All_All_US_US
+  - p_All_SG
+  - p_All_HK_CN
   - p_All_All_JP_JP
   - p_All_All_JP_JP
   - p_All_CN
-  - p_All_SG
-  - p_All_HK_CN
   - p_All_Other
   - p_All_TW_CN
   - p_All_JP
@@ -151,8 +151,8 @@ proxy-groups:
   - p_All_All_HK_HK_CN_CN
   - p_All_All_TW_TW_CN_CN
   - p_All_All_TW_TW_CN_CN
-  - p_All_CN
   - p_All_HK_CN
+  - p_All_CN
   - p_All_TW_CN
 - name: 🇸🇬 ‍新加坡
   type: url-test
@@ -315,24 +315,6 @@ proxy-providers:
       enable: true
       url: https://i.ytimg.com/generate_204
       interval: 30
-  p_All_All_JP_JP:
-    type: http
-    url: https://raw.kgithub.com/xinshijimeishaonv/minisub/main/trials_providers/p_All_All_JP_JP.yaml
-    interval: 180
-    path: trials_providers/p_All_All_JP_JP.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_CN:
-    type: http
-    url: https://raw.kgithub.com/xinshijimeishaonv/minisub/main/trials_providers/p_All_CN.yaml
-    interval: 180
-    path: trials_providers/p_All_CN.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
   p_All_SG:
     type: http
     url: https://raw.kgithub.com/xinshijimeishaonv/minisub/main/trials_providers/p_All_SG.yaml
@@ -347,6 +329,24 @@ proxy-providers:
     url: https://raw.kgithub.com/xinshijimeishaonv/minisub/main/trials_providers/p_All_HK_CN.yaml
     interval: 180
     path: trials_providers/p_All_HK_CN.yaml
+    health-check:
+      enable: true
+      url: https://i.ytimg.com/generate_204
+      interval: 30
+  p_All_All_JP_JP:
+    type: http
+    url: https://raw.kgithub.com/xinshijimeishaonv/minisub/main/trials_providers/p_All_All_JP_JP.yaml
+    interval: 180
+    path: trials_providers/p_All_All_JP_JP.yaml
+    health-check:
+      enable: true
+      url: https://i.ytimg.com/generate_204
+      interval: 30
+  p_All_CN:
+    type: http
+    url: https://raw.kgithub.com/xinshijimeishaonv/minisub/main/trials_providers/p_All_CN.yaml
+    interval: 180
+    path: trials_providers/p_All_CN.yaml
     health-check:
       enable: true
       url: https://i.ytimg.com/generate_204

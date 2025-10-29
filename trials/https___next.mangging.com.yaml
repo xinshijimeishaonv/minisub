@@ -11,16 +11,24 @@ proxy-groups:
   proxies:
   - ⚡ ‍低延迟
   - 👆🏻 ‍指定
+  - 🇭🇰 ‍香港
+  - 🇸🇬 ‍新加坡
+  - 👆🏻🇭🇰 ‍香港
+  - 👆🏻🇸🇬 ‍新加坡
   - DIRECT
   - REJECT
 - name: ⚡ ‍低延迟
   type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 30
   tolerance: 100
-  use: &id001
-  - All
+  proxies: &id001
+  - 🇭🇰 香港 - V2Board
+  - 🇸🇬 新加坡 01 - V2Board
+  - 🇸🇬 新加坡 02 - V2Board
 - name: 👆🏻 ‍指定
   type: select
-  use: *id001
+  proxies: *id001
 - name: 🛩️ ‍墙内
   type: select
   proxies:
@@ -37,12 +45,16 @@ proxy-groups:
   type: select
   proxies:
   - 🛩️ ‍墙内
+  - 🇭🇰 ‍香港
   - ✈️ ‍起飞
+  - 👆🏻🇭🇰 ‍香港
   - 👆🏻 ‍指定
 - name: 🤖 ‍AI
   type: select
   proxies:
+  - 🇸🇬 ‍新加坡
   - ✈️ ‍起飞
+  - 👆🏻🇸🇬 ‍新加坡
   - 👆🏻 ‍指定
   - 🛩️ ‍墙内
 - name: 🌐 ‍未知站点
@@ -51,16 +63,31 @@ proxy-groups:
   - ✈️ ‍起飞
   - 🛩️ ‍墙内
   - 💩 ‍广告
-proxy-providers:
-  All:
-    type: http
-    url: https://raw.kgithub.com/xinshijimeishaonv/minisub/main/trials_providers/https___multiserver.multiserveradelshoop.com/All.yaml
-    interval: 180
-    path: trials_providers/https___multiserver.multiserveradelshoop.com/All.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
+- name: 🇭🇰 ‍香港
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
+  tolerance: 100
+  proxies: &id002
+  - 🇭🇰 香港 - V2Board
+- name: 🇸🇬 ‍新加坡
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
+  tolerance: 100
+  proxies: &id003
+  - 🇸🇬 新加坡 01 - V2Board
+  - 🇸🇬 新加坡 02 - V2Board
+- name: 👆🏻🇭🇰 ‍香港
+  type: select
+  proxies: *id002
+- name: 👆🏻🇸🇬 ‍新加坡
+  type: select
+  proxies: *id003
+proxies:
+- {name: 🇸🇬 新加坡 01 - V2Board, server: node1.mangging.com, port: 10060, type: ss, cipher: aes-256-gcm, password: 01c24270-d905-477a-be88-0ebd7f12dc4c, udp: true}
+- {name: 🇭🇰 香港 - V2Board, server: node2.mangging.com, port: 10055, type: vmess, uuid: 01c24270-d905-477a-be88-0ebd7f12dc4c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡 02 - V2Board, server: node3.mangging.com, port: 10091, type: vmess, uuid: 01c24270-d905-477a-be88-0ebd7f12dc4c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,DIRECT
 - DOMAIN-SUFFIX,ip6-localhost,DIRECT
