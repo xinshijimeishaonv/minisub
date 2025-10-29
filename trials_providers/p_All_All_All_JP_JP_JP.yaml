@@ -1,7 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇯🇵 日本01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 42100, type: trojan, password: b3f4926c-0dc7-4d12-b2d7-08f072e77dd8, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本02丨Tiktok - 火箭云, server: n002.xunxunmimisbs.sbs, port: 42100, type: trojan, password: b3f4926c-0dc7-4d12-b2d7-08f072e77dd8, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本03丨Neflix - 火箭云, server: n001.xunxunmimisbs.sbs, port: 42101, type: trojan, password: b3f4926c-0dc7-4d12-b2d7-08f072e77dd8, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本04丨GPT - 火箭云, server: n002.xunxunmimisbs.sbs, port: 42101, type: trojan, password: b3f4926c-0dc7-4d12-b2d7-08f072e77dd8, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
