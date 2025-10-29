@@ -5,6 +5,3 @@ proxies:
 - {name: 🇯🇵 日本02丨Tiktok - 迅云加速, server: 02.xunyunnode.sbs, port: 44447, type: ss, cipher: chacha20-ietf-poly1305, password: 866f56c8-9e2e-4d79-a8fd-d22b21b3bb33, udp: true}
 - {name: 🇯🇵 日本03丨Neflix - 迅云加速, server: xc.xunyunnode.sbs, port: 26329, type: ss, cipher: chacha20-ietf-poly1305, password: 866f56c8-9e2e-4d79-a8fd-d22b21b3bb33, udp: true}
 - {name: 🇯🇵 日本04丨GPT - 迅云加速, server: wa.xunyunnode.sbs, port: 25856, type: ss, cipher: chacha20-ietf-poly1305, password: 866f56c8-9e2e-4d79-a8fd-d22b21b3bb33, udp: true}
-- {name: 🇯🇵 日本1(广新) x1 - ⚡闪连机场, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: eb6169bf-8e7d-4798-9ca4-1efbc86699c1, udp: true}
-- {name: 🇯🇵 日本2(广新) x1 - ⚡闪连机场, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: eb6169bf-8e7d-4798-9ca4-1efbc86699c1, udp: true}
-- {name: 🇯🇵 日本3(广新) x1 - ⚡闪连机场, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: eb6169bf-8e7d-4798-9ca4-1efbc86699c1, udp: true}
