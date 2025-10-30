@@ -17,14 +17,14 @@ proxies:
 - *id006
 - *id007
 - *id008
-- {name: '🇯🇵 [电信专线] 日本 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 52707, type: ss, cipher: chacha20-ietf-poly1305, password: 90afc466-2f23-44d7-9424-1c018c416c5f, udp: true}
-- {name: '🇯🇵 [联通专线] 日本 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 59719, type: ss, cipher: chacha20-ietf-poly1305, password: 90afc466-2f23-44d7-9424-1c018c416c5f, udp: true}
-- {name: '🇯🇵 [移动专线] 日本 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 55439, type: ss, cipher: chacha20-ietf-poly1305, password: 90afc466-2f23-44d7-9424-1c018c416c5f, udp: true}
+- {name: '🇯🇵 [电信专线] 日本 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 52707, type: ss, cipher: chacha20-ietf-poly1305, password: 461ab799-2e9c-4fba-9e22-6dcea1eb6da9, udp: true}
+- {name: '🇯🇵 [联通专线] 日本 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 59719, type: ss, cipher: chacha20-ietf-poly1305, password: 461ab799-2e9c-4fba-9e22-6dcea1eb6da9, udp: true}
+- {name: '🇯🇵 [移动专线] 日本 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 55439, type: ss, cipher: chacha20-ietf-poly1305, password: 461ab799-2e9c-4fba-9e22-6dcea1eb6da9, udp: true}
 - &id011 {name: 🇯🇵 日本1(广新) x1 - ⚡闪连机场, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 53b32f01-4565-41c2-9ed5-afcdc57ad2b5, udp: true}
 - &id012 {name: 🇯🇵 日本2(广新) x1 - ⚡闪连机场, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 53b32f01-4565-41c2-9ed5-afcdc57ad2b5, udp: true}
 - &id013 {name: 🇯🇵 日本3(广新) x1 - ⚡闪连机场, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 53b32f01-4565-41c2-9ed5-afcdc57ad2b5, udp: true}
-- &id009 {name: 🇯🇵 JP日本-Tokyo-01 - 脉冲云, server: gyaa.fnnnt.cn, port: 48999, type: ss, cipher: chacha20-ietf-poly1305, password: cd220e67-384a-4adc-a10e-be210eed6ad3, udp: true}
-- &id010 {name: 🇯🇵 JP日本-Tokyo-wap-02 - 脉冲云, server: gyaa.fnnnt.cn, port: 48999, type: ss, cipher: chacha20-ietf-poly1305, password: cd220e67-384a-4adc-a10e-be210eed6ad3, udp: true}
+- &id009 {name: 🇯🇵 JP日本-Tokyo-01 - 脉冲云, server: gyaa.fnnnt.cn, port: 48999, type: ss, cipher: chacha20-ietf-poly1305, password: 01c69bb8-cd60-4c54-a621-ead591bd90de, udp: true}
+- &id010 {name: 🇯🇵 JP日本-Tokyo-wap-02 - 脉冲云, server: gyaa.fnnnt.cn, port: 48999, type: ss, cipher: chacha20-ietf-poly1305, password: 01c69bb8-cd60-4c54-a621-ead591bd90de, udp: true}
 - *id001
 - *id002
 - *id003
