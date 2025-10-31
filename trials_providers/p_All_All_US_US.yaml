@@ -2,6 +2,10 @@
 ---
 proxies:
 - {name: '🇺🇸 [vip①]美国1 - MG Network', server: 15.mamamajd.site, port: 23615, type: vmess, uuid: 862a37bc-1249-3dc6-a170-ea9e95ea9483, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 中转美国1(动态) x1 - ⚡闪连机场, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 48d5c10a-38dc-4375-a7b1-e8526fc37e28, udp: true}
-- {name: 🇺🇸 中转美国2(动态) x1 - ⚡闪连机场, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 48d5c10a-38dc-4375-a7b1-e8526fc37e28, udp: true}
-- {name: 🇺🇸 中转美国3(动态) x1 - ⚡闪连机场, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 48d5c10a-38dc-4375-a7b1-e8526fc37e28, udp: true}
+- {name: 🇺🇸 美国01 - 迅云加速, server: 01.xunyunnode.sbs, port: 45823, type: ss, cipher: chacha20-ietf-poly1305, password: 70f5a646-2652-4e20-9a4f-57fa748337b1, udp: true}
+- {name: 🇺🇸 美国02 - 迅云加速, server: 02.xunyunnode.sbs, port: 37699, type: ss, cipher: chacha20-ietf-poly1305, password: 70f5a646-2652-4e20-9a4f-57fa748337b1, udp: true}
+- {name: 🇺🇸 美国03 - 迅云加速, server: xc.xunyunnode.sbs, port: 32893, type: ss, cipher: chacha20-ietf-poly1305, password: 70f5a646-2652-4e20-9a4f-57fa748337b1, udp: true}
+- {name: 🇺🇸 美国04 - 迅云加速, server: wa.xunyunnode.sbs, port: 22041, type: ss, cipher: chacha20-ietf-poly1305, password: 70f5a646-2652-4e20-9a4f-57fa748337b1, udp: true}
+- {name: 🇺🇸 中转美国1(动态) x1 - ⚡闪连机场, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: c0cf3f63-e162-408a-83f5-1460ca4b1850, udp: true}
+- {name: 🇺🇸 中转美国2(动态) x1 - ⚡闪连机场, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: c0cf3f63-e162-408a-83f5-1460ca4b1850, udp: true}
+- {name: 🇺🇸 中转美国3(动态) x1 - ⚡闪连机场, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: c0cf3f63-e162-408a-83f5-1460ca4b1850, udp: true}
