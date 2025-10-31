@@ -38,28 +38,22 @@ proxy-groups:
   - 🇭🇰 香港03丨Neflix - 山药网
   - 🇭🇰 香港04 - 山药网
   - 🇭🇰 香港01-新疆 - 山药网
-  - 🇭🇰 试用节点-香港 - 巨人坤场vpn(超稳定)
   - 🇹🇼 台湾01 - 山药网
   - 🇹🇼 台湾02 - 山药网
   - 🇹🇼 台湾01-新疆 - 山药网
-  - 🇹🇼 试用节点-台湾 - 巨人坤场vpn(超稳定)
   - 🇸🇬 新加坡01 - 山药网
   - 🇸🇬 新加坡02丨Tiktok - 山药网
   - 🇸🇬 新加坡03丨Neflix - 山药网
   - 🇸🇬 新加坡04丨GPT - 山药网
   - 🇸🇬 新加坡01-新疆 - 山药网
-  - 🇸🇬 试用节点-新加坡 - 巨人坤场vpn(超稳定)
   - 🇯🇵 日本01 - 山药网
   - 🇯🇵 日本02丨Tiktok - 山药网
   - 🇯🇵 日本03丨Neflix - 山药网
   - 🇯🇵 日本04丨GPT - 山药网
   - 🇯🇵 日本01-新疆 - 山药网
-  - 🇯🇵 试用节点-日本 - 巨人坤场vpn(超稳定)
-  - 🇺🇸 [ss]美国1 - XMYFREE
   - 🇺🇸 美国01丨Neflix - 山药网
   - 🇺🇸 美国02丨GPT - 山药网
   - 🇺🇸 美国01-新疆 - 山药网
-  - 🇺🇸 试用节点-美国 - 巨人坤场vpn(超稳定)
   - ℹ️ 续费地址官网：yam666.com - 山药网
   - ℹ️ 备用：yam688.com - 山药网
   - ℹ️ 问题反馈邮箱：jianyi5978@gmail.com - 山药网
@@ -80,10 +74,6 @@ proxy-groups:
   - 🇻🇳 越南02 - 山药网
   - 🇹🇭 泰国01 - 山药网
   - 🇹🇭 泰国02 - 山药网
-  - ℹ️ 官网:best.idsduf.com - 巨人坤场vpn(超稳定)
-  - 试用一小时2g - 巨人坤场vpn(超稳定)
-  - ℹ️ 购买后请更新订阅 - 巨人坤场vpn(超稳定)
-  - ℹ️ 购买后获取更多节点 - 巨人坤场vpn(超稳定)
 - name: 👆🏻 ‍指定
   type: select
   proxies: *id001
@@ -144,7 +134,6 @@ proxy-groups:
   - 🇭🇰 香港03丨Neflix - 山药网
   - 🇭🇰 香港04 - 山药网
   - 🇭🇰 香港01-新疆 - 山药网
-  - 🇭🇰 试用节点-香港 - 巨人坤场vpn(超稳定)
 - name: 🇹🇼 ‍台湾
   type: url-test
   url: https://i.ytimg.com/generate_204
@@ -154,7 +143,6 @@ proxy-groups:
   - 🇹🇼 台湾01 - 山药网
   - 🇹🇼 台湾02 - 山药网
   - 🇹🇼 台湾01-新疆 - 山药网
-  - 🇹🇼 试用节点-台湾 - 巨人坤场vpn(超稳定)
 - name: 🇨🇳 ‍中国
   type: url-test
   url: https://i.ytimg.com/generate_204
@@ -166,11 +154,9 @@ proxy-groups:
   - 🇭🇰 香港03丨Neflix - 山药网
   - 🇭🇰 香港04 - 山药网
   - 🇭🇰 香港01-新疆 - 山药网
-  - 🇭🇰 试用节点-香港 - 巨人坤场vpn(超稳定)
   - 🇹🇼 台湾01 - 山药网
   - 🇹🇼 台湾02 - 山药网
   - 🇹🇼 台湾01-新疆 - 山药网
-  - 🇹🇼 试用节点-台湾 - 巨人坤场vpn(超稳定)
 - name: 🇸🇬 ‍新加坡
   type: url-test
   url: https://i.ytimg.com/generate_204
@@ -182,7 +168,6 @@ proxy-groups:
   - 🇸🇬 新加坡03丨Neflix - 山药网
   - 🇸🇬 新加坡04丨GPT - 山药网
   - 🇸🇬 新加坡01-新疆 - 山药网
-  - 🇸🇬 试用节点-新加坡 - 巨人坤场vpn(超稳定)
 - name: 🇯🇵 ‍日本
   type: url-test
   url: https://i.ytimg.com/generate_204
@@ -194,18 +179,15 @@ proxy-groups:
   - 🇯🇵 日本03丨Neflix - 山药网
   - 🇯🇵 日本04丨GPT - 山药网
   - 🇯🇵 日本01-新疆 - 山药网
-  - 🇯🇵 试用节点-日本 - 巨人坤场vpn(超稳定)
 - name: 🇺🇸 ‍美国
   type: url-test
   url: https://i.ytimg.com/generate_204
   interval: 15
   tolerance: 300
   proxies: &id007
-  - 🇺🇸 [ss]美国1 - XMYFREE
   - 🇺🇸 美国01丨Neflix - 山药网
   - 🇺🇸 美国02丨GPT - 山药网
   - 🇺🇸 美国01-新疆 - 山药网
-  - 🇺🇸 试用节点-美国 - 巨人坤场vpn(超稳定)
 - name: 🎏 ‍其他
   type: url-test
   url: https://i.ytimg.com/generate_204
@@ -232,10 +214,6 @@ proxy-groups:
   - 🇻🇳 越南02 - 山药网
   - 🇹🇭 泰国01 - 山药网
   - 🇹🇭 泰国02 - 山药网
-  - ℹ️ 官网:best.idsduf.com - 巨人坤场vpn(超稳定)
-  - 试用一小时2g - 巨人坤场vpn(超稳定)
-  - ℹ️ 购买后请更新订阅 - 巨人坤场vpn(超稳定)
-  - ℹ️ 购买后获取更多节点 - 巨人坤场vpn(超稳定)
 - name: 👆🏻🇭🇰 ‍香港
   type: select
   proxies: *id002
@@ -258,36 +236,28 @@ proxy-groups:
   type: select
   proxies: *id008
 proxies:
-- {name: '🇺🇸 [ss]美国1 - XMYFREE', server: 3.129.133.36, port: 30000, type: ss, cipher: aes-256-gcm, password: 069a9e24-7a9e-4a01-b376-68f38c6cf75f, udp: true}
-- {name: 🇺🇸 美国01丨Neflix - 山药网, server: n001.xunxunmimisbs.sbs, port: 16000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国02丨GPT - 山药网, server: n002.xunxunmimisbs.sbs, port: 16000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国01-新疆 - 山药网, server: zl-us01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 31000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡02丨Tiktok - 山药网, server: n002.xunxunmimisbs.sbs, port: 31000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡03丨Neflix - 山药网, server: n001.xunxunmimisbs.sbs, port: 31001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡04丨GPT - 山药网, server: n001.xunxunmimisbs.sbs, port: 31001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡01-新疆 - 山药网, server: zl-sg01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 香港01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 21000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 香港02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 21000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 香港03丨Neflix - 山药网, server: n001.xunxunmimisbs.sbs, port: 21001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 香港04 - 山药网, server: n002.xunxunmimisbs.sbs, port: 21001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 台湾01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 19030, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 台湾02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 19030, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 香港01-新疆 - 山药网, server: zl-hk01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: zl_hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 台湾01-新疆 - 山药网, server: zl-tw01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 41000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本02丨Tiktok - 山药网, server: n002.xunxunmimisbs.sbs, port: 41000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本03丨Neflix - 山药网, server: n001.xunxunmimisbs.sbs, port: 41001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本04丨GPT - 山药网, server: n002.xunxunmimisbs.sbs, port: 41001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本01-新疆 - 山药网, server: zl-jp01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, skip-cert-verify: true, udp: true}
 - {name: ℹ️ 续费地址官网：yam666.com - 山药网, server: n001.xunxunmimisbs.sbs, port: 21000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: ℹ️ 备用：yam688.com - 山药网, server: n001.xunxunmimisbs.sbs, port: 21000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: ℹ️ 问题反馈邮箱：jianyi5978@gmail.com - 山药网, server: n001.xunxunmimisbs.sbs, port: 21000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 超级高佣招合作代理 - 山药网, server: n001.xunxunmimisbs.sbs, port: 21000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 21000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 21000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港03丨Neflix - 山药网, server: n001.xunxunmimisbs.sbs, port: 21001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港04 - 山药网, server: n002.xunxunmimisbs.sbs, port: 21001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: hk02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 31000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡02丨Tiktok - 山药网, server: n002.xunxunmimisbs.sbs, port: 31000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡03丨Neflix - 山药网, server: n001.xunxunmimisbs.sbs, port: 31001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡04丨GPT - 山药网, server: n001.xunxunmimisbs.sbs, port: 31001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 41000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本02丨Tiktok - 山药网, server: n002.xunxunmimisbs.sbs, port: 41000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本03丨Neflix - 山药网, server: n001.xunxunmimisbs.sbs, port: 41001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本04丨GPT - 山药网, server: n002.xunxunmimisbs.sbs, port: 41001, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: jp02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇰🇷 韩国01丨Tiktok - 山药网, server: n001.xunxunmimisbs.sbs, port: 14000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇰🇷 韩国02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 14000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: kr01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇬🇧 英国01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 15000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: uk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇬🇧 英国02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 15000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: uk1.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国01丨Neflix - 山药网, server: n001.xunxunmimisbs.sbs, port: 16000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国02丨GPT - 山药网, server: n002.xunxunmimisbs.sbs, port: 16000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: us01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇩🇪 德国01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 17000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇩🇪 德国02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 17000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: de01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇦🇪 迪拜01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 18000, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: db01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
@@ -300,15 +270,13 @@ proxies:
 - {name: 🇻🇳 越南02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 19010, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: vn01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇹🇭 泰国01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 19020, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇹🇭 泰国02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 19020, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: tai01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 试用节点-美国 - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 47831, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
-- {name: 🇸🇬 试用节点-新加坡 - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 57884, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
-- {name: 🇭🇰 试用节点-香港 - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 26535, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
-- {name: 🇹🇼 试用节点-台湾 - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 27689, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
-- {name: 🇯🇵 试用节点-日本 - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 29571, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
-- {name: ℹ️ 官网:best.idsduf.com - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 26535, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
-- {name: 试用一小时2g - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 26535, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
-- {name: ℹ️ 购买后请更新订阅 - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 26535, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
-- {name: ℹ️ 购买后获取更多节点 - 巨人坤场vpn(超稳定), server: jry.izenny.com, port: 26535, type: ss, cipher: chacha20-ietf-poly1305, password: 3a7c263a-d7b4-41a4-bfd2-7c50df26fcf2, udp: true}
+- {name: 🇹🇼 台湾01 - 山药网, server: n001.xunxunmimisbs.sbs, port: 19030, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾02 - 山药网, server: n002.xunxunmimisbs.sbs, port: 19030, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港01-新疆 - 山药网, server: zl-hk01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, sni: zl_hk01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡01-新疆 - 山药网, server: zl-sg01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本01-新疆 - 山药网, server: zl-jp01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾01-新疆 - 山药网, server: zl-tw01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国01-新疆 - 山药网, server: zl-us01.xxxxyyyysbs.sbs, port: 52800, type: trojan, password: 641c68ee-1eac-44ff-a95c-e0d43a9b998f, skip-cert-verify: true, udp: true}
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,DIRECT
 - DOMAIN-SUFFIX,ip6-localhost,DIRECT
