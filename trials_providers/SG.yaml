@@ -18,9 +18,9 @@ proxies:
 - *id006
 - *id007
 - *id008
-- {name: '🇸🇬 [电信专线] 新加坡 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 50412, type: ss, cipher: chacha20-ietf-poly1305, password: 5c20e125-ee8d-4aae-8a43-ba873f06fb64, udp: true}
-- {name: '🇸🇬 [联通专线] 新加坡 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 55375, type: ss, cipher: chacha20-ietf-poly1305, password: 5c20e125-ee8d-4aae-8a43-ba873f06fb64, udp: true}
-- {name: '🇸🇬 [移动专线] 新加坡 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 59384, type: ss, cipher: chacha20-ietf-poly1305, password: 5c20e125-ee8d-4aae-8a43-ba873f06fb64, udp: true}
+- {name: '🇸🇬 [电信专线] 新加坡 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 50412, type: ss, cipher: chacha20-ietf-poly1305, password: fa629a34-c076-4eaa-bd7b-b2892bf86410, udp: true}
+- {name: '🇸🇬 [联通专线] 新加坡 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 55375, type: ss, cipher: chacha20-ietf-poly1305, password: fa629a34-c076-4eaa-bd7b-b2892bf86410, udp: true}
+- {name: '🇸🇬 [移动专线] 新加坡 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 59384, type: ss, cipher: chacha20-ietf-poly1305, password: fa629a34-c076-4eaa-bd7b-b2892bf86410, udp: true}
 - &id012 {name: 🇸🇬 新加坡解锁(广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 2d44cc17-8b26-4cf1-8faa-9dcd33e61564, udp: true}
 - &id013 {name: 🇸🇬 新加坡解锁(广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 2d44cc17-8b26-4cf1-8faa-9dcd33e61564, udp: true}
 - &id014 {name: 🇸🇬 新加坡解锁(广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 2d44cc17-8b26-4cf1-8faa-9dcd33e61564, udp: true}
@@ -49,9 +49,6 @@ proxies:
 - {name: 🇸🇬 新加坡02丨Tiktok - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 31200, type: trojan, password: 48f890a1-8428-4bd8-a0ce-4404635dd563, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇸🇬 新加坡03丨Neflix - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 31201, type: trojan, password: 48f890a1-8428-4bd8-a0ce-4404635dd563, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇸🇬 新加坡04丨GPT - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 31201, type: trojan, password: 48f890a1-8428-4bd8-a0ce-4404635dd563, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- *id009
-- *id010
-- *id011
 - *id009
 - *id010
 - *id011

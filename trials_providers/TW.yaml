@@ -14,9 +14,9 @@ proxies:
 - *id004
 - *id005
 - *id006
-- {name: '🇹🇼 [电信专线] 台湾 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 59345, type: ss, cipher: chacha20-ietf-poly1305, password: 5c20e125-ee8d-4aae-8a43-ba873f06fb64, udp: true}
-- {name: '🇹🇼 [联通专线] 台湾 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 56963, type: ss, cipher: chacha20-ietf-poly1305, password: 5c20e125-ee8d-4aae-8a43-ba873f06fb64, udp: true}
-- {name: '🇹🇼 [移动专线] 台湾 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 57989, type: ss, cipher: chacha20-ietf-poly1305, password: 5c20e125-ee8d-4aae-8a43-ba873f06fb64, udp: true}
+- {name: '🇹🇼 [电信专线] 台湾 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 59345, type: ss, cipher: chacha20-ietf-poly1305, password: fa629a34-c076-4eaa-bd7b-b2892bf86410, udp: true}
+- {name: '🇹🇼 [联通专线] 台湾 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 56963, type: ss, cipher: chacha20-ietf-poly1305, password: fa629a34-c076-4eaa-bd7b-b2892bf86410, udp: true}
+- {name: '🇹🇼 [移动专线] 台湾 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 57989, type: ss, cipher: chacha20-ietf-poly1305, password: fa629a34-c076-4eaa-bd7b-b2892bf86410, udp: true}
 - &id009 {name: 🇹🇼 台湾解锁 (广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 2d44cc17-8b26-4cf1-8faa-9dcd33e61564, udp: true}
 - &id010 {name: 🇹🇼 台湾解锁 (广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 2d44cc17-8b26-4cf1-8faa-9dcd33e61564, udp: true}
 - &id011 {name: 🇹🇼 台湾解锁 (广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 2d44cc17-8b26-4cf1-8faa-9dcd33e61564, udp: true}
@@ -25,9 +25,9 @@ proxies:
 - &id014 {name: 🇹🇼 台湾解锁 (广新)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 2d44cc17-8b26-4cf1-8faa-9dcd33e61564, udp: true}
 - &id007 {name: 🇹🇼 CN台湾-TaiBei-01 - 脉冲云, server: gyaa.yy9866.com, port: 21525, type: ss, cipher: chacha20-ietf-poly1305, password: 948af6a7-ec6f-4a79-a3a9-9117eedb1625, udp: true}
 - &id008 {name: 🇹🇼 CN台湾-TaiBei-02-wap - 脉冲云, server: gyaa.yy9866.com, port: 21589, type: ss, cipher: chacha20-ietf-poly1305, password: 948af6a7-ec6f-4a79-a3a9-9117eedb1625, udp: true}
-- {name: 🇹🇼 台湾高速节点 - 新云游, server: 103.137.63.77, port: 443, type: trojan, password: 047579ce-5e3c-431a-b18d-bb2e7cb91786, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 台湾高速节点2 - 新云游, server: 118.232.199.29, port: 443, type: trojan, password: 047579ce-5e3c-431a-b18d-bb2e7cb91786, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 台湾高速节点3 - 新云游, server: 118.232.199.14, port: 443, type: trojan, password: 047579ce-5e3c-431a-b18d-bb2e7cb91786, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾高速节点 - 新云游, server: 103.137.63.77, port: 443, type: trojan, password: c20ee6ee-b914-496d-a60d-2c6037440946, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾高速节点2 - 新云游, server: 118.232.199.29, port: 443, type: trojan, password: c20ee6ee-b914-496d-a60d-2c6037440946, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾高速节点3 - 新云游, server: 118.232.199.14, port: 443, type: trojan, password: c20ee6ee-b914-496d-a60d-2c6037440946, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
 - *id001
 - *id002
 - {name: 🇹🇼 台湾②一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18850, type: vmess, uuid: 81a69166-2299-3ab1-862e-f454e8f7adaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
@@ -42,8 +42,6 @@ proxies:
 - *id014
 - {name: 🇹🇼 台湾01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 28400, type: trojan, password: 48f890a1-8428-4bd8-a0ce-4404635dd563, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇹🇼 台湾02 - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 28400, type: trojan, password: 48f890a1-8428-4bd8-a0ce-4404635dd563, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- *id007
-- *id008
 - *id007
 - *id008
 - *id015

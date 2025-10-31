@@ -1,7 +1,7 @@
 %YAML 1.1
 ---
 proxies:
-- {name: 🇸🇬 新加坡01 - 迅云加速, server: 01.xunyunnode.sbs, port: 14195, type: ss, cipher: chacha20-ietf-poly1305, password: db4bffb3-6bf7-431f-8626-16def63652f5, udp: true}
-- {name: 🇸🇬 新加坡02丨Tiktok - 迅云加速, server: 02.xunyunnode.sbs, port: 10463, type: ss, cipher: chacha20-ietf-poly1305, password: db4bffb3-6bf7-431f-8626-16def63652f5, udp: true}
-- {name: 🇸🇬 新加坡03丨Neflix - 迅云加速, server: xc.xunyunnode.sbs, port: 18416, type: ss, cipher: chacha20-ietf-poly1305, password: db4bffb3-6bf7-431f-8626-16def63652f5, udp: true}
-- {name: 🇸🇬 新加坡04丨GPT - 迅云加速, server: wa.xunyunnode.sbs, port: 50764, type: ss, cipher: chacha20-ietf-poly1305, password: db4bffb3-6bf7-431f-8626-16def63652f5, udp: true}
+- {name: 🇸🇬 新加坡01 - 迅云加速, server: 01.xunyunnode.sbs, port: 14195, type: ss, cipher: chacha20-ietf-poly1305, password: 51915753-9dca-4b79-b54a-7f23bb886381, udp: true}
+- {name: 🇸🇬 新加坡02丨Tiktok - 迅云加速, server: 02.xunyunnode.sbs, port: 10463, type: ss, cipher: chacha20-ietf-poly1305, password: 51915753-9dca-4b79-b54a-7f23bb886381, udp: true}
+- {name: 🇸🇬 新加坡03丨Neflix - 迅云加速, server: xc.xunyunnode.sbs, port: 18416, type: ss, cipher: chacha20-ietf-poly1305, password: 51915753-9dca-4b79-b54a-7f23bb886381, udp: true}
+- {name: 🇸🇬 新加坡04丨GPT - 迅云加速, server: wa.xunyunnode.sbs, port: 50764, type: ss, cipher: chacha20-ietf-poly1305, password: 51915753-9dca-4b79-b54a-7f23bb886381, udp: true}
