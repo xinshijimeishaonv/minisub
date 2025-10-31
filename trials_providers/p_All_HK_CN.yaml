@@ -1,6 +1,10 @@
 %YAML 1.1
 ---
 proxies:
+- {name: 🇭🇰 香港01 - 迅云加速, server: 01.xunyunnode.sbs, port: 13058, type: ss, cipher: chacha20-ietf-poly1305, password: db4bffb3-6bf7-431f-8626-16def63652f5, udp: true}
+- {name: 🇭🇰 香港02 - 迅云加速, server: 02.xunyunnode.sbs, port: 45473, type: ss, cipher: chacha20-ietf-poly1305, password: db4bffb3-6bf7-431f-8626-16def63652f5, udp: true}
+- {name: 🇭🇰 香港03丨Neflix - 迅云加速, server: xc.xunyunnode.sbs, port: 26200, type: ss, cipher: chacha20-ietf-poly1305, password: db4bffb3-6bf7-431f-8626-16def63652f5, udp: true}
+- {name: 🇭🇰 香港04 - 迅云加速, server: wa.xunyunnode.sbs, port: 35301, type: ss, cipher: chacha20-ietf-poly1305, password: db4bffb3-6bf7-431f-8626-16def63652f5, udp: true}
 - {name: '🇭🇰 [电信专线] 香港 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 58911, type: ss, cipher: chacha20-ietf-poly1305, password: 84aa5422-84e5-4fcc-aced-4d34ae751112, udp: true}
 - {name: '🇭🇰 [联通专线] 香港 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 53754, type: ss, cipher: chacha20-ietf-poly1305, password: 84aa5422-84e5-4fcc-aced-4d34ae751112, udp: true}
 - {name: '🇭🇰 [移动专线] 香港 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 59543, type: ss, cipher: chacha20-ietf-poly1305, password: 84aa5422-84e5-4fcc-aced-4d34ae751112, udp: true}
