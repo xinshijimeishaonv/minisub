@@ -1,0 +1,5 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇹🇼 台湾01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 49130, type: trojan, password: ae5eba07-cb45-4a45-bd5f-2c7185b79e9c, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾02 - 火箭云, server: n002.xunxunmimisbs.sbs, port: 49130, type: trojan, password: ae5eba07-cb45-4a45-bd5f-2c7185b79e9c, sni: tw01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
