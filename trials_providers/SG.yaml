@@ -18,6 +18,9 @@ proxies:
 - *id006
 - *id007
 - *id008
+- {name: '🇸🇬 [电信专线] 新加坡 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 50412, type: ss, cipher: chacha20-ietf-poly1305, password: c80c0aaa-3e49-41a1-a51c-eab1803c6733, udp: true}
+- {name: '🇸🇬 [联通专线] 新加坡 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 55375, type: ss, cipher: chacha20-ietf-poly1305, password: c80c0aaa-3e49-41a1-a51c-eab1803c6733, udp: true}
+- {name: '🇸🇬 [移动专线] 新加坡 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 59384, type: ss, cipher: chacha20-ietf-poly1305, password: c80c0aaa-3e49-41a1-a51c-eab1803c6733, udp: true}
 - &id012 {name: 🇸🇬 新加坡解锁(广港)1 x1 - ⚡闪连机场, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: b93fa20e-8454-4a9f-9906-056b370cd369, udp: true}
 - &id013 {name: 🇸🇬 新加坡解锁(广港)2 x1 - ⚡闪连机场, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: b93fa20e-8454-4a9f-9906-056b370cd369, udp: true}
 - &id014 {name: 🇸🇬 新加坡解锁(广港)3 x1 - ⚡闪连机场, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: b93fa20e-8454-4a9f-9906-056b370cd369, udp: true}
@@ -46,9 +49,6 @@ proxies:
 - {name: 🇸🇬 新加坡02丨Tiktok - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 31200, type: trojan, password: 87b9d3c2-aa21-470c-997f-49ef236db7bf, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇸🇬 新加坡03丨Neflix - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 31201, type: trojan, password: 87b9d3c2-aa21-470c-997f-49ef236db7bf, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇸🇬 新加坡04丨GPT - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 31201, type: trojan, password: 87b9d3c2-aa21-470c-997f-49ef236db7bf, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
-- *id009
-- *id010
-- *id011
 - *id009
 - *id010
 - *id011
