@@ -2,6 +2,10 @@
 ---
 proxies:
 - {name: '🇸🇬 [vip①]②新加坡 - MG Network', server: 17.mamamajd.site, port: 23617, type: vmess, uuid: 571f10d7-7fc4-3b40-a363-49bf54a4399b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡01 - 迅云加速, server: 01.xunyunnode.sbs, port: 14195, type: ss, cipher: chacha20-ietf-poly1305, password: 05ccdc4c-c4dd-4a55-80b7-0277cdac256f, udp: true}
+- {name: 🇸🇬 新加坡02丨Tiktok - 迅云加速, server: 02.xunyunnode.sbs, port: 10463, type: ss, cipher: chacha20-ietf-poly1305, password: 05ccdc4c-c4dd-4a55-80b7-0277cdac256f, udp: true}
+- {name: 🇸🇬 新加坡03丨Neflix - 迅云加速, server: xc.xunyunnode.sbs, port: 18416, type: ss, cipher: chacha20-ietf-poly1305, password: 05ccdc4c-c4dd-4a55-80b7-0277cdac256f, udp: true}
+- {name: 🇸🇬 新加坡04丨GPT - 迅云加速, server: wa.xunyunnode.sbs, port: 50764, type: ss, cipher: chacha20-ietf-poly1305, password: 05ccdc4c-c4dd-4a55-80b7-0277cdac256f, udp: true}
 - {name: 🇸🇬 新加坡01 - 火箭云, server: n001.xunxunmimisbs.sbs, port: 31100, type: trojan, password: e0600ba7-c61d-4be4-af7f-1f9b19979dda, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇸🇬 新加坡02丨Tiktok - 火箭云, server: n002.xunxunmimisbs.sbs, port: 31100, type: trojan, password: e0600ba7-c61d-4be4-af7f-1f9b19979dda, sni: sg01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
 - {name: 🇸🇬 新加坡03丨Neflix - 火箭云, server: n002.xunxunmimisbs.sbs, port: 31101, type: trojan, password: e0600ba7-c61d-4be4-af7f-1f9b19979dda, sni: sg02.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
