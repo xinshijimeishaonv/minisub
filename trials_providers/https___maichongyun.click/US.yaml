@@ -1,5 +1,5 @@
 %YAML 1.1
 ---
 proxies:
-- {name: 🇺🇸 US美国-Los Angeles-01 - 脉冲云, server: gyaa.fnnnt.cn, port: 21000, type: ss, cipher: chacha20-ietf-poly1305, password: b5e7498a-ac8a-40ea-8351-ac983d6cdf34, udp: true}
-- {name: 🇺🇸 US美国-Los Angeles-02-wap - 脉冲云, server: gyaa.fnnnt.cn, port: 21012, type: ss, cipher: chacha20-ietf-poly1305, password: b5e7498a-ac8a-40ea-8351-ac983d6cdf34, udp: true}
+- {name: 🇺🇸 US美国-Los Angeles-01 - 脉冲云, server: gyaa.fnnnt.cn, port: 21000, type: ss, cipher: chacha20-ietf-poly1305, password: 21b1f4ab-e852-4639-827b-2422d0c2313b, udp: true}
+- {name: 🇺🇸 US美国-Los Angeles-02-wap - 脉冲云, server: gyaa.fnnnt.cn, port: 21012, type: ss, cipher: chacha20-ietf-poly1305, password: 21b1f4ab-e852-4639-827b-2422d0c2313b, udp: true}

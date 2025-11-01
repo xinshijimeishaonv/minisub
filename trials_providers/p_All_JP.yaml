@@ -1,21 +1,22 @@
 %YAML 1.1
 ---
 proxies:
-- {name: 🇯🇵 日本01 - 迅云加速, server: 01.xunyunnode.sbs, port: 38763, type: ss, cipher: chacha20-ietf-poly1305, password: cfff1fc5-27b9-4684-8623-6831bd627f60, udp: true}
-- {name: 🇯🇵 日本02丨Tiktok - 迅云加速, server: 02.xunyunnode.sbs, port: 44447, type: ss, cipher: chacha20-ietf-poly1305, password: cfff1fc5-27b9-4684-8623-6831bd627f60, udp: true}
-- {name: 🇯🇵 日本03丨Neflix - 迅云加速, server: xc.xunyunnode.sbs, port: 26329, type: ss, cipher: chacha20-ietf-poly1305, password: cfff1fc5-27b9-4684-8623-6831bd627f60, udp: true}
-- {name: 🇯🇵 日本04丨GPT - 迅云加速, server: wa.xunyunnode.sbs, port: 25856, type: ss, cipher: chacha20-ietf-poly1305, password: cfff1fc5-27b9-4684-8623-6831bd627f60, udp: true}
+- {name: '🇯🇵 [电信专线] 日本 x A区 - 南北云', server: zf-ct.bgblwow.org, port: 52707, type: ss, cipher: chacha20-ietf-poly1305, password: 4dae6a5a-d149-4ec8-ac1a-9a7520e5b2a9, udp: true}
+- {name: '🇯🇵 [联通专线] 日本 x A区 - 南北云', server: zf-cu.bgblwow.org, port: 59719, type: ss, cipher: chacha20-ietf-poly1305, password: 4dae6a5a-d149-4ec8-ac1a-9a7520e5b2a9, udp: true}
+- {name: '🇯🇵 [移动专线] 日本 x A区 - 南北云', server: zf-cm.bgblwow.org, port: 55439, type: ss, cipher: chacha20-ietf-poly1305, password: 4dae6a5a-d149-4ec8-ac1a-9a7520e5b2a9, udp: true}
 - {name: 🇯🇵 日本①一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18813, type: vmess, uuid: ecaa097c-4c7e-3a3c-bd2a-a0f971eb251a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
 - {name: 🇯🇵 日本②东京一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18806, type: vmess, uuid: ecaa097c-4c7e-3a3c-bd2a-a0f971eb251a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
 - {name: 🇯🇵 日本③大阪一优化 - tuboshu.io|土拨鼠.co, server: yresdc3fjfg.raspn.cn, port: 18812, type: vmess, uuid: ecaa097c-4c7e-3a3c-bd2a-a0f971eb251a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ixigua.com, network: ws, ws-opts: {path: /, headers: {Host: ixigua.com}}, udp: true}
 - {name: 🇯🇵 日本|隧道1 - 天天网络, server: cdn1.ttcdn.top, port: 15180, type: vmess, uuid: aacfc28f-244b-4cc7-9f7d-f4047c6dab41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: 🇯🇵 日本|隧道2 - 天天网络, server: cdn2.ttcdn.top, port: 15180, type: vmess, uuid: aacfc28f-244b-4cc7-9f7d-f4047c6dab41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: 🇯🇵 日本|隧道3 - 天天网络, server: zf2.xinzhanduijie.top, port: 15180, type: vmess, uuid: aacfc28f-244b-4cc7-9f7d-f4047c6dab41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本-v6|02 - 悦云, server: greenchais2.668918.xyz, port: 22307, type: vmess, uuid: 5c27086a-6f28-4783-bc6c-029d5928faf3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本-v6|04 - 悦云, server: greenip1.668918.xyz, port: 22306, type: vmess, uuid: 5c27086a-6f28-4783-bc6c-029d5928faf3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本-v6|05 - 悦云, server: greenip2.668918.xyz, port: 22307, type: vmess, uuid: 5c27086a-6f28-4783-bc6c-029d5928faf3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本-v6|06 - 悦云, server: greenip3.668918.xyz, port: 22308, type: vmess, uuid: 5c27086a-6f28-4783-bc6c-029d5928faf3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本-v6|07 - 悦云, server: vpsjp1.668918.xyz, port: 22306, type: vmess, uuid: 5c27086a-6f28-4783-bc6c-029d5928faf3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本01 - 悦云, server: greenjp2.yueyun.de, port: 11030, type: trojan, password: 5c27086a-6f28-4783-bc6c-029d5928faf3, sni: greenjp2.yueyun.de, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本02 - 悦云, server: vpsjp.yueyun.de, port: 13036, type: trojan, password: 5c27086a-6f28-4783-bc6c-029d5928faf3, sni: vpsjp.yueyun.de, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本03 - 悦云, server: cloud.yueyun.de, port: 10389, type: trojan, password: 5c27086a-6f28-4783-bc6c-029d5928faf3, sni: cloud.yueyun.de, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本01 - 疾速cloud, server: n001.xunxunmimisbs.sbs, port: 41300, type: trojan, password: a75ab3b9-42a8-4d0d-aa83-a8ba63a14bfd, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本02丨Tiktok - 疾速cloud, server: n002.xunxunmimisbs.sbs, port: 41300, type: trojan, password: a75ab3b9-42a8-4d0d-aa83-a8ba63a14bfd, sni: jp01.xxxxyyyysbs.sbs, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本-v6|02 - 悦云, server: greenchais2.668918.xyz, port: 22307, type: vmess, uuid: 153e2ccf-ca93-4b3c-b2b3-b3d0c6b35785, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本-v6|04 - 悦云, server: greenip1.668918.xyz, port: 22306, type: vmess, uuid: 153e2ccf-ca93-4b3c-b2b3-b3d0c6b35785, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本-v6|05 - 悦云, server: greenip2.668918.xyz, port: 22307, type: vmess, uuid: 153e2ccf-ca93-4b3c-b2b3-b3d0c6b35785, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本-v6|06 - 悦云, server: greenip3.668918.xyz, port: 22308, type: vmess, uuid: 153e2ccf-ca93-4b3c-b2b3-b3d0c6b35785, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本-v6|07 - 悦云, server: vpsjp1.668918.xyz, port: 22306, type: vmess, uuid: 153e2ccf-ca93-4b3c-b2b3-b3d0c6b35785, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本01 - 悦云, server: greenjp2.yueyun.de, port: 11030, type: trojan, password: 153e2ccf-ca93-4b3c-b2b3-b3d0c6b35785, sni: greenjp2.yueyun.de, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本02 - 悦云, server: vpsjp.yueyun.de, port: 13036, type: trojan, password: 153e2ccf-ca93-4b3c-b2b3-b3d0c6b35785, sni: vpsjp.yueyun.de, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本03 - 悦云, server: cloud.yueyun.de, port: 10389, type: trojan, password: 153e2ccf-ca93-4b3c-b2b3-b3d0c6b35785, sni: cloud.yueyun.de, skip-cert-verify: true, udp: true}
