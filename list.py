@@ -360,7 +360,6 @@ if __name__ == '__main__':
     
     # GitHub raw文件来源
     github_urls_list = [
-        'https://raw.githubusercontent.com/zwrt/Toolbox/refs/heads/main/file/success_domains.txt',
         'https://raw.githubusercontent.com/luochen1975/jichangnodes/refs/heads/main/trial.cfg',
         # 可以添加更多GitHub raw文件
     ]
