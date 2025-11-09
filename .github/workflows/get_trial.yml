@@ -73,7 +73,7 @@ jobs:
             git commit -m "${Emoji[$[$RANDOM % ${#Emoji[@]}]]} Sync $(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)${Emoji[$[$RANDOM % ${#Emoji[@]}]]}"
             git pull --rebase origin main
             git push origin main
-            echo "✅ trial.cfg 已推送到远程仓库 /file/。"
+            echo "✅ 已推送"
           fi
 
       - name: Cleanup
@@ -129,9 +129,9 @@ jobs:
         run: |
           if [ -f temp-repo/file/trial.cfg ]; then
             cp temp-repo/file/trial.cfg .
-            echo "✅ 已从远程仓库 /file/ 拉取 trial.cfg。"
+            echo "✅ 拉取成功"
           else
-            echo "❌ 远程仓库 /file/ 无 trial.cfg，跳过 get_trial.py。"
+            echo "❌ 无内容跳过。"
             exit 0
           fi
 
@@ -169,7 +169,7 @@ jobs:
             git commit -m "${Emoji[$[$RANDOM % ${#Emoji[@]}]]} Sync $(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)${Emoji[$[$RANDOM % ${#Emoji[@]}]]}"
             git pull --rebase origin main
             git push origin main
-            echo "✅ 成功域名已推送到远程仓库 /file/。"
+            echo "✅ 已推送"
           fi
 
       - name: Run get_trial_update_url.py (if needed)
