@@ -20,7 +20,7 @@ jobs:
       REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
 
     steps:
-      - name: 检出代码（当前仓库）
+      - name: 检出代码
         uses: actions/checkout@v4
 
       - name: 设置 Python 环境
@@ -33,7 +33,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      - name: 运行 list.py (收集并更新 trial.cfg)
+      - name: 运行 list.py
         run: python list.py
 
       - name: Checkout remote repository
@@ -96,7 +96,7 @@ jobs:
       REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
 
     steps:
-      - name: 检出代码（当前仓库）
+      - name: 检出代码
         uses: actions/checkout@v4
 
       - name: 设置 Python 环境
@@ -107,7 +107,7 @@ jobs:
       - name: 安装依赖
         run: pip install requests beautifulsoup4 ruamel.yaml json5 pyyaml
 
-      - name: Checkout remote repository (拉取最新的 trial.cfg)
+      - name: Checkout remote repository
         id: checkout-remote
         continue-on-error: true
         uses: actions/checkout@v4
@@ -135,7 +135,7 @@ jobs:
             exit 0
           fi
 
-      - name: Run get_trial.py (使用拉取的 trial.cfg)
+      - name: Run get_trial.py
         if: steps.checkout-remote.outcome == 'success'
         run: python get_trial.py --output-dir ./
 
