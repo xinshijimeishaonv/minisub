@@ -3,7 +3,7 @@ name: Collect List and Auto Update
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 18 * * *'
 
 permissions: write-all
 
@@ -33,7 +33,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      - name: 运行 list.py
+      - name: 运行
         run: python list.py
 
       - name: Checkout remote repository
@@ -53,7 +53,7 @@ jobs:
           echo "❌ Checkout remote repo failed. Skipping push trial.cfg."
           exit 0
 
-      - name: Push trial.cfg to remote repo /file/
+      - name: Push
         if: steps.checkout-remote.outcome == 'success'
         run: |
           cd temp-repo
@@ -124,14 +124,14 @@ jobs:
           echo "❌ Checkout remote repo failed. Skipping auto-update."
           exit 0
 
-      - name: Copy trial.cfg from remote /file/ to working dir
+      - name: Copy
         if: steps.checkout-remote.outcome == 'success'
         run: |
           if [ -f temp-repo/file/trial.cfg ]; then
             cp temp-repo/file/trial.cfg .
             echo "✅ 拉取成功"
           else
-            echo "❌ 无内容跳过。"
+            echo "❌ 无内容跳过"
             exit 0
           fi
 
@@ -141,22 +141,22 @@ jobs:
 
       - name: Prepare success domains for push
         run: |
-          ls -la success_domains* || echo "No success files found"
+          ls -la trial success_domains.txt || echo "No trial or success files found"
 
-      - name: Push success domains to remote repo /file/
+      - name: Push
         if: steps.checkout-remote.outcome == 'success'
         run: |
           cd temp-repo
           mkdir -p file
 
+          rm -f file/trial
+          if [ -f ../trial ]; then
+            cp ../trial file/
+          fi
+
           rm -f file/success_domains.txt
           if [ -f ../success_domains.txt ]; then
             cp ../success_domains.txt file/
-          fi
-
-          rm -f file/success_domains.json
-          if [ -f ../success_domains.json ]; then
-            cp ../success_domains.json file/
           fi
 
           git config user.name "GitHub Actions"
@@ -164,7 +164,7 @@ jobs:
           Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
           git add file/
           if git diff --staged --quiet; then
-            echo "No changes to success domains, skipping commit."
+            echo "No changes to trial or success_domains.txt, skipping commit."
           else
             git commit -m "${Emoji[$[$RANDOM % ${#Emoji[@]}]]} Sync $(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)${Emoji[$[$RANDOM % ${#Emoji[@]}]]}"
             git pull --rebase origin main
@@ -184,5 +184,5 @@ jobs:
       - name: Cleanup
         if: always()
         run: |
-          rm -f trial.cfg success_domains.txt success_domains.json || true
+          rm -f trial.cfg trial success_domains.txt success_domains.json || true
           rm -rf temp-repo || true
