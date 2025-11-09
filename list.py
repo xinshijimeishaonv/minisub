@@ -354,8 +354,17 @@ def main(start_urls, github_urls, max_pages_per_source=90, max_workers=10):
 if __name__ == '__main__':
     # Telegram频道来源
     start_urls_list = [
-        'https://t.me/s/jichang_list',
+        # 'https://t.me/s/jichang_list',
         # 'https://t.me/s/another_channel_example', # 您可以添加更多起始URL
+    ]
+    
+    # GitHub raw文件来源
+    github_urls_list = [
+        'https://raw.githubusercontent.com/moneyfly1/jichangnodes/refs/heads/main/trial.cfg',
+        'https://raw.githubusercontent.com/moneyfly1/666/refs/heads/main/trial.cfg',
+        'https://raw.githubusercontent.com/moneyfly1/sublist/refs/heads/main/jichang.txt',
+        'https://raw.githubusercontent.com/moneyfly1/sublist/refs/heads/main/teee',
+        # 可以添加更多GitHub raw文件
     ]
     
     max_pages_to_crawl_per_source = 5 # 每个Telegram来源最多抓取的页数
