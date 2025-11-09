@@ -78,7 +78,9 @@ jobs:
             echo "No changes to trial.cfg, skipping commit."
           else
             git commit -m "Update /file/trial.cfg from list.py: $(date '+%Y-%m-%d %H:%M:%S')"
-            git push origin main
+            # 修改：先 pull rebase 远程变更，再 push
+            git pull --rebase origin main || echo "⚠️ Pull rebase failed, but continuing..."
+            git push origin main || echo "❌ Push failed, check remote changes."
             echo "✅ trial.cfg 已推送到远程仓库 /file/。"
           fi
 
@@ -128,6 +130,8 @@ jobs:
           path: temp-repo
           ref: main
           persist-credentials: true
+          # 可选优化：全克隆历史，避免浅克隆冲突（稍慢）
+          # fetch-depth: 0
 
       - name: Check checkout status
         if: steps.checkout-remote.outcome != 'success'
@@ -182,7 +186,9 @@ jobs:
             echo "No changes to success domains, skipping commit."
           else
             git commit -m "Auto update /file/success_domains*: $(date '+%Y-%m-%d %H:%M:%S')"
-            git push origin main
+            # 修改：先 pull rebase 远程变更，再 push（修复拒绝更新错误）
+            git pull --rebase origin main || echo "⚠️ Pull rebase failed (possible conflict), but continuing..."
+            git push origin main || echo "❌ Push failed, manual intervention needed."
             echo "✅ 成功域名已推送到远程仓库 /file/。"
           fi
 
