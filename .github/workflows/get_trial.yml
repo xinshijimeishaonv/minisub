@@ -1,9 +1,9 @@
 name: Collect List and Auto Update
 
 on:
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *'  # 每天凌晨3点 (UTC) 运行
+    - cron: '0 3 * * *'
 
 permissions: write-all
 
@@ -16,8 +16,8 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DDAL_EMAIL: ${{ secrets.DDAL_EMAIL }}
       DDAL_PASSWORD: ${{ secrets.DDAL_PASSWORD }}
-      REPO: ${{ secrets.REPO }}  # 如 moneyfly1/output-repo
-      REPO_TOKEN: ${{ secrets.REPO_TOKEN }}  # PAT with repo permissions
+      REPO: ${{ secrets.REPO }}
+      REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
 
     steps:
       - name: 检出代码（当前仓库）
@@ -36,11 +36,6 @@ jobs:
       - name: 运行 list.py (收集并更新 trial.cfg)
         run: python list.py
 
-      - name: Debug remote repo access
-        run: |
-          echo "REPO value: ${{ env.REPO }}"
-          git ls-remote https://x-access-token:${{ env.REPO_TOKEN }}@github.com/${{ env.REPO }}.git HEAD || echo "❌ ls-remote failed: 检查 REPO_TOKEN 或分支 main"
-
       - name: Checkout remote repository
         id: checkout-remote
         continue-on-error: true
@@ -49,7 +44,7 @@ jobs:
           repository: ${{ env.REPO }}
           token: ${{ env.REPO_TOKEN }}
           path: temp-repo
-          ref: main  # 远程仓库默认分支
+          ref: main
           persist-credentials: true
 
       - name: Check checkout status
@@ -62,25 +57,22 @@ jobs:
         if: steps.checkout-remote.outcome == 'success'
         run: |
           cd temp-repo
-          mkdir -p file  # 确保 /file 目录存在
-          # 复制生成的 trial.cfg 到 /file/
+          mkdir -p file
           rm -f file/trial.cfg
           if [ -f ../trial.cfg ]; then
             cp ../trial.cfg file/
-            echo "Copied trial.cfg to remote repo /file/."
           fi
 
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-
+          Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
           git add file/trial.cfg
           if git diff --staged --quiet; then
             echo "No changes to trial.cfg, skipping commit."
           else
-            git commit -m "Update /file/trial.cfg from list.py: $(date '+%Y-%m-%d %H:%M:%S')"
-            # 修改：先 pull rebase 远程变更，再 push
-            git pull --rebase origin main || echo "⚠️ Pull rebase failed, but continuing..."
-            git push origin main || echo "❌ Push failed, check remote changes."
+            git commit -m "${Emoji[$[$RANDOM % ${#Emoji[@]}]]} Sync $(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)${Emoji[$[$RANDOM % ${#Emoji[@]}]]}"
+            git pull --rebase origin main
+            git push origin main
             echo "✅ trial.cfg 已推送到远程仓库 /file/。"
           fi
 
@@ -88,11 +80,11 @@ jobs:
         if: always()
         run: |
           rm -rf temp-repo || true
-          echo "Cleanup complete."
+          rm -f trial.cfg || true
 
   auto-update:
     runs-on: ubuntu-latest
-    needs: collect-list  # 依赖 collect-list，确保 trial.cfg 已更新到远程
+    needs: collect-list
     timeout-minutes: 90
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     env:
@@ -115,11 +107,6 @@ jobs:
       - name: 安装依赖
         run: pip install requests beautifulsoup4 ruamel.yaml json5 pyyaml
 
-      - name: Debug remote repo access
-        run: |
-          echo "REPO value: ${{ env.REPO }}"
-          git ls-remote https://x-access-token:${{ env.REPO_TOKEN }}@github.com/${{ env.REPO }}.git HEAD || echo "❌ ls-remote failed"
-
       - name: Checkout remote repository (拉取最新的 trial.cfg)
         id: checkout-remote
         continue-on-error: true
@@ -130,8 +117,6 @@ jobs:
           path: temp-repo
           ref: main
           persist-credentials: true
-          # 可选优化：全克隆历史，避免浅克隆冲突（稍慢）
-          # fetch-depth: 0
 
       - name: Check checkout status
         if: steps.checkout-remote.outcome != 'success'
@@ -156,48 +141,36 @@ jobs:
 
       - name: Prepare success domains for push
         run: |
-          echo "成功域名文件: success_domains.txt 和 success_domains.json 已生成"
           ls -la success_domains* || echo "No success files found"
 
       - name: Push success domains to remote repo /file/
         if: steps.checkout-remote.outcome == 'success'
         run: |
           cd temp-repo
-          mkdir -p file  # 确保 /file 目录存在
+          mkdir -p file
 
-          # 只 push 成功域名列表到 /file/（隐藏节点）
           rm -f file/success_domains.txt
           if [ -f ../success_domains.txt ]; then
             cp ../success_domains.txt file/
-            echo "Pushed success_domains.txt to /file/."
           fi
 
           rm -f file/success_domains.json
           if [ -f ../success_domains.json ]; then
             cp ../success_domains.json file/
-            echo "Pushed success_domains.json to /file/."
           fi
 
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-
+          Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
           git add file/
           if git diff --staged --quiet; then
             echo "No changes to success domains, skipping commit."
           else
-            git commit -m "Auto update /file/success_domains*: $(date '+%Y-%m-%d %H:%M:%S')"
-            # 修改：先 pull rebase 远程变更，再 push（修复拒绝更新错误）
-            git pull --rebase origin main || echo "⚠️ Pull rebase failed (possible conflict), but continuing..."
-            git push origin main || echo "❌ Push failed, manual intervention needed."
+            git commit -m "${Emoji[$[$RANDOM % ${#Emoji[@]}]]} Sync $(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)${Emoji[$[$RANDOM % ${#Emoji[@]}]]}"
+            git pull --rebase origin main
+            git push origin main
             echo "✅ 成功域名已推送到远程仓库 /file/。"
           fi
-
-      - name: Cleanup
-        if: always()
-        run: |
-          rm -f trial.cfg success_domains.txt success_domains.json || true
-          rm -rf temp-repo || true
-          echo "Cleanup complete."
 
       - name: Run get_trial_update_url.py (if needed)
         if: always()
@@ -207,3 +180,9 @@ jobs:
           else
             echo "get_trial_update_url.py not found, skipping."
           fi
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -f trial.cfg success_domains.txt success_domains.json || true
+          rm -rf temp-repo || true
