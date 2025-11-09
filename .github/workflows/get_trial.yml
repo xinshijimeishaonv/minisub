@@ -1,42 +1,203 @@
-name: get_trial.py
+name: Collect List and Auto Update
+
 on:
-  workflow_dispatch:
-  #schedule:
-   #  - cron: '0 * * * *'
+  workflow_dispatch:  # 允许手动触发
+  schedule:
+    - cron: '0 3 * * *'  # 每天凌晨3点 (UTC) 运行
+
 permissions: write-all
+
 jobs:
-  main:
+  collect-list:
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 60
     env:
+      TZ: Asia/Shanghai
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DDAL_EMAIL: ${{ secrets.DDAL_EMAIL }}
       DDAL_PASSWORD: ${{ secrets.DDAL_PASSWORD }}
-      TZ: Asia/Shanghai
+      REPO: ${{ secrets.REPO }}  # 如 moneyfly1/output-repo
+      REPO_TOKEN: ${{ secrets.REPO_TOKEN }}  # PAT with repo permissions
+
     steps:
-      - uses: actions/checkout@v3
+      - name: 检出代码（当前仓库）
+        uses: actions/checkout@v4
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v5
         with:
-          ref: ${{ github.ref }}
-      - uses: actions/setup-python@v4
+          python-version: '3.9'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: 运行 list.py (收集并更新 trial.cfg)
+        run: python list.py
+
+      - name: Debug remote repo access
+        run: |
+          echo "REPO value: ${{ env.REPO }}"
+          git ls-remote https://x-access-token:${{ env.REPO_TOKEN }}@github.com/${{ env.REPO }}.git HEAD || echo "❌ ls-remote failed: 检查 REPO_TOKEN 或分支 main"
+
+      - name: Checkout remote repository
+        id: checkout-remote
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.REPO }}
+          token: ${{ env.REPO_TOKEN }}
+          path: temp-repo
+          ref: main  # 远程仓库默认分支
+          persist-credentials: true
+
+      - name: Check checkout status
+        if: steps.checkout-remote.outcome != 'success'
+        run: |
+          echo "❌ Checkout remote repo failed. Skipping push trial.cfg."
+          exit 0
+
+      - name: Push trial.cfg to remote repo /file/
+        if: steps.checkout-remote.outcome == 'success'
+        run: |
+          cd temp-repo
+          mkdir -p file  # 确保 /file 目录存在
+          # 复制生成的 trial.cfg 到 /file/
+          rm -f file/trial.cfg
+          if [ -f ../trial.cfg ]; then
+            cp ../trial.cfg file/
+            echo "Copied trial.cfg to remote repo /file/."
+          fi
+
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          git add file/trial.cfg
+          if git diff --staged --quiet; then
+            echo "No changes to trial.cfg, skipping commit."
+          else
+            git commit -m "Update /file/trial.cfg from list.py: $(date '+%Y-%m-%d %H:%M:%S')"
+            git push origin main
+            echo "✅ trial.cfg 已推送到远程仓库 /file/。"
+          fi
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -rf temp-repo || true
+          echo "Cleanup complete."
+
+  auto-update:
+    runs-on: ubuntu-latest
+    needs: collect-list  # 依赖 collect-list，确保 trial.cfg 已更新到远程
+    timeout-minutes: 90
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    env:
+      TZ: Asia/Shanghai
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DDAL_EMAIL: ${{ secrets.DDAL_EMAIL }}
+      DDAL_PASSWORD: ${{ secrets.DDAL_PASSWORD }}
+      REPO: ${{ secrets.REPO }}
+      REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+
+    steps:
+      - name: 检出代码（当前仓库）
+        uses: actions/checkout@v4
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-      - name: Prepare
+
+      - name: 安装依赖
         run: pip install requests beautifulsoup4 ruamel.yaml json5 pyyaml
-      - name: 运行 Python 脚本
+
+      - name: Debug remote repo access
         run: |
-          python list.py
-      - name: Run get_trial.py
-        run: python get_trial.py
-      - name: Commit
-        id: commit
+          echo "REPO value: ${{ env.REPO }}"
+          git ls-remote https://x-access-token:${{ env.REPO_TOKEN }}@github.com/${{ env.REPO }}.git HEAD || echo "❌ ls-remote failed"
+
+      - name: Checkout remote repository (拉取最新的 trial.cfg)
+        id: checkout-remote
         continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.REPO }}
+          token: ${{ env.REPO_TOKEN }}
+          path: temp-repo
+          ref: main
+          persist-credentials: true
+
+      - name: Check checkout status
+        if: steps.checkout-remote.outcome != 'success'
         run: |
-          git config user.email "actions@github.com"
+          echo "❌ Checkout remote repo failed. Skipping auto-update."
+          exit 0
+
+      - name: Copy trial.cfg from remote /file/ to working dir
+        if: steps.checkout-remote.outcome == 'success'
+        run: |
+          if [ -f temp-repo/file/trial.cfg ]; then
+            cp temp-repo/file/trial.cfg .
+            echo "✅ 已从远程仓库 /file/ 拉取 trial.cfg。"
+          else
+            echo "❌ 远程仓库 /file/ 无 trial.cfg，跳过 get_trial.py。"
+            exit 0
+          fi
+
+      - name: Run get_trial.py (使用拉取的 trial.cfg)
+        if: steps.checkout-remote.outcome == 'success'
+        run: python get_trial.py --output-dir ./
+
+      - name: Prepare success domains for push
+        run: |
+          echo "成功域名文件: success_domains.txt 和 success_domains.json 已生成"
+          ls -la success_domains* || echo "No success files found"
+
+      - name: Push success domains to remote repo /file/
+        if: steps.checkout-remote.outcome == 'success'
+        run: |
+          cd temp-repo
+          mkdir -p file  # 确保 /file 目录存在
+
+          # 只 push 成功域名列表到 /file/（隐藏节点）
+          rm -f file/success_domains.txt
+          if [ -f ../success_domains.txt ]; then
+            cp ../success_domains.txt file/
+            echo "Pushed success_domains.txt to /file/."
+          fi
+
+          rm -f file/success_domains.json
+          if [ -f ../success_domains.json ]; then
+            cp ../success_domains.json file/
+            echo "Pushed success_domains.json to /file/."
+          fi
+
           git config user.name "GitHub Actions"
-          git add .
-          git commit -m "update $(date +%Y-%m-%d" "%H:%M:%S)"
-          git pull --rebase
-      - uses: ad-m/github-push-action@master
-        if: ${{ steps.commit.outcome == 'success' }}
-      - name: Run get_trial_update_url.py
-        run: python get_trial_update_url.py
+          git config user.email "actions@github.com"
+
+          git add file/
+          if git diff --staged --quiet; then
+            echo "No changes to success domains, skipping commit."
+          else
+            git commit -m "Auto update /file/success_domains*: $(date '+%Y-%m-%d %H:%M:%S')"
+            git push origin main
+            echo "✅ 成功域名已推送到远程仓库 /file/。"
+          fi
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -f trial.cfg success_domains.txt success_domains.json || true
+          rm -rf temp-repo || true
+          echo "Cleanup complete."
+
+      - name: Run get_trial_update_url.py (if needed)
+        if: always()
+        run: |
+          if [ -f get_trial_update_url.py ]; then
+            python get_trial_update_url.py
+          else
+            echo "get_trial_update_url.py not found, skipping."
+          fi
