@@ -141,7 +141,7 @@ jobs:
 
       - name: Prepare success domains for push
         run: |
-          ls -la trial success_domains.txt || echo "No trial or success files found"
+          ls -la trial success_domains* || echo "No trial or success files found"
 
       - name: Push
         if: steps.checkout-remote.outcome == 'success'
@@ -159,12 +159,17 @@ jobs:
             cp ../success_domains.txt file/
           fi
 
+          rm -f file/success_domains.json
+          if [ -f ../success_domains.json ]; then
+            cp ../success_domains.json file/
+          fi
+
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
           git add file/
           if git diff --staged --quiet; then
-            echo "No changes to trial or success_domains.txt, skipping commit."
+            echo "No changes to trial or success_domains*, skipping commit."
           else
             git commit -m "${Emoji[$[$RANDOM % ${#Emoji[@]}]]} Sync $(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)${Emoji[$[$RANDOM % ${#Emoji[@]}]]}"
             git pull --rebase origin main
