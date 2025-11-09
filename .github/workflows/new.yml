@@ -1,0 +1,142 @@
+name: Collect List and Auto Update
+
+on:
+  workflow_dispatch: # 允许手动触发
+  #schedule:
+   # - cron: '0 3 * * *' # 每天凌晨3点 (UTC) 运行 list 部分；AutoUpdate 部分每小时运行，但由于顺序，可调整为更保守的 cron
+
+permissions: write-all
+
+jobs:
+  collect-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      TZ: Asia/Shanghai
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DDAL_EMAIL: ${{ secrets.DDAL_EMAIL }}
+      DDAL_PASSWORD: ${{ secrets.DDAL_PASSWORD }}
+      REPO: ${{ secrets.REPO }} # 远程仓库，如 moneyfly1/output-repo
+      REPO_TOKEN: ${{ secrets.REPO_TOKEN }} # 远程仓库的 PAT token
+
+    steps:
+      # 第一阶段：收集列表（原 list.yml 逻辑）
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python 环境 (for list)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: 安装依赖 (for list)
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: 运行 list.py (收集并更新 trial.cfg)
+        run: |
+          python list.py
+
+      - name: Commit and push trial.cfg (only if changed)
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git stash push -m "local changes" || true
+          git pull origin main --rebase || true
+          git stash pop || true
+          git add trial.cfg
+          if [[ -n $(git status -s trial.cfg) ]]; then
+            git commit -m "update trial.cfg: $(date +%Y-%m-%d" "%H:%M:%S)"
+            git push origin main
+          else
+            echo "No changes to trial.cfg, skipping commit."
+          fi
+
+      # 第二阶段：Auto Update（原 AutoUpdate.yml 逻辑，使用本地 trial.cfg）
+      - name: 设置 Python 环境 (for get_trial)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 安装依赖 (for get_trial)
+        run: pip install requests beautifulsoup4 ruamel.yaml json5 pyyaml
+
+      - name: Run get_trial.py (使用本地 trial.cfg，输出成功域名)
+        run: |
+          # 无需 TRIAL_CFG_URL，因为 list 后有本地 trial.cfg
+          python get_trial.py --output-dir ./
+
+      # 可选：保存成功域名到文件（如果需要 push 成功域名而非 trial）
+      - name: Prepare success domains for push
+        run: |
+          # 如果要 push 成功域名列表到远程仓库
+          # cp success_domains.txt ../success_domains.txt  # 示例，调整路径
+          echo "成功域名文件: success_domains.txt 和 success_domains.json 已生成"
+
+      - name: Checkout remote repository
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ env.REPO }}
+          token: ${{ env.REPO_TOKEN }}
+          path: temp-repo
+          ref: master
+
+      - name: Push to remote repo (trial + success domains)
+        run: |
+          cd temp-repo
+          TARGET_DIR="output/data"
+          mkdir -p $TARGET_DIR
+
+          # Push base64 trial (原逻辑)
+          rm -f $TARGET_DIR/trial
+          if [ -f ../trial ]; then
+            cp ../trial $TARGET_DIR/trial
+          fi
+
+          # Push 成功域名列表（保护节点信息，只暴露域名）
+          rm -f $TARGET_DIR/success_domains.txt
+          if [ -f ../success_domains.txt ]; then
+            cp ../success_domains.txt $TARGET_DIR/success_domains.txt
+          fi
+
+          rm -f $TARGET_DIR/success_domains.json
+          if [ -f ../success_domains.json ]; then
+            cp ../success_domains.json $TARGET_DIR/success_domains.json
+          fi
+
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          git add $TARGET_DIR/
+          git commit -m "Auto update: $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+
+          git push || echo "No changes to push"
+
+      - name: Cleanup
+        run: |
+          rm -f trial success_domains.txt success_domains.json || true
+          rm -rf temp-repo || true
+
+      - name: Commit local changes (if any)
+        id: commit
+        continue-on-error: true
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add .
+          git commit -m "update $(date +%Y-%m-%d\" \"%H:%M:%S)" || echo "No local changes"
+          git pull --rebase || true
+
+      - name: Push local changes
+        if: ${{ steps.commit.outcome == 'success' }}
+        uses: ad-m/github-push-action@master
+
+      - name: Run get_trial_update_url.py (if needed)
+        if: always()
+        run: |
+          if [ -f get_trial_update_url.py ]; then
+            python get_trial_update_url.py
+          else
+            echo "get_trial_update_url.py not found, skipping."
+          fi
